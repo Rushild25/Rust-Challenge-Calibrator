@@ -1,0 +1,26 @@
+[package]
+name = "rust-challenge-calibrator"
+version = "0.1.0"
+edition = "2021"
+authors = ["Rushil Dhingra <rushild25@gmail.com>"]
+description = "Deterministic challenge verification, repository eligibility screening, and difficulty calibration engine."
+license = "MIT"
+
+[dependencies]
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.35", features = ["full"] }
+syn = { version = "2.0", features = ["full", "visit", "extra-traits"] }
+quote = "1.0"
+proc-macro2 = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+walkdir = "2.4"
+regex = "1.10"
+anyhow = "1.0"
+tracing = "0.1"
+tracing-subscriber = "0.3"
+tempfile = "3.9"
+
+[dev-dependencies]
+assert_cmd = "2.0"
+predicates = "3.0"
